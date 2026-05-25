@@ -2,35 +2,27 @@
 
 Advanced Computational Intelligence framework for Abalone age classification using Feedforward Neural Networks (FNN), Neuro-Fuzzy Systems, Self-Constructing Neuro-Fuzzy Inference System (SONFIN), XGBoost, LightGBM, CatBoost, and Stacking Ensemble learning.
 
-This project focuses on:
-
-- Neural network optimisation
-- Computational intelligence techniques
-- Fuzzy reasoning interpretability
-- Self-constructing fuzzy rule generation
-- Ensemble learning
-- Real-world deployment with Streamlit
-
 ---
 
-# 📌 Project Overview
+# 🚀 Project Overview
 
-The goal of this project is to classify Abalone age into multiple ordered classes using physical measurements and computational intelligence approaches.
+This project investigates multiple Computational Intelligence (CI) approaches for Abalone age classification using physical measurement features.
 
-The project investigates:
+The implementation focuses on:
 
-- Baseline Feedforward Neural Networks
-- Advanced Deep Neural Networks
-- Fixed Neuro-Fuzzy Systems
-- Gradient Boosting Models
-- Stacking Ensemble Learning
+- Feedforward Neural Networks (FNN)
+- Neuro-Fuzzy Systems
 - Self-Constructing Neuro-Fuzzy Inference System (SONFIN)
+- Gradient Boosting Models
+- Ensemble Learning
+- Explainable AI and fuzzy reasoning
+- Streamlit deployment for real-time prediction
 
-The implementation compares predictive performance, interpretability, fuzzy reasoning capability, and generalisation performance on hidden Kaggle evaluation data.
+The project compares model performance, interpretability, fuzzy rule generation capability, and hidden-test generalisation performance.
 
 ---
 
-# 🧠 Models Implemented
+# 🧠 Implemented Models
 
 | Setting | Model |
 |---|---|
@@ -45,36 +37,36 @@ The implementation compares predictive performance, interpretability, fuzzy reas
 
 ---
 
-# 🚀 Key Features
+# ✨ Key Features
 
 ✅ Feedforward Neural Networks (FNN)
 
-✅ Self-Constructing Neuro-Fuzzy Inference System (SONFIN)
+✅ Neuro-Fuzzy Inference Systems
+
+✅ Self-Constructing SONFIN architecture
 
 ✅ Dynamic fuzzy rule generation
 
 ✅ Gaussian membership functions
 
-✅ Ensemble learning
-
-✅ Stacking meta-learning
+✅ Ensemble meta-learning
 
 ✅ Explainable AI visualisations
 
-✅ Kaggle leaderboard evaluation
+✅ Real-time Streamlit deployment
 
-✅ Streamlit deployment ready
+✅ Hidden Kaggle evaluation testing
 
 ---
 
 # 📊 Experimental Highlights
 
-| Metric | Best Result |
+| Metric | Result |
 |---|---|
 | Best Kaggle Score | 0.808 |
-| Best Standalone Model | XGBoost |
 | Best Ensemble Model | Stacking Ensemble |
-| Best Interpretability Model | SONFIN |
+| Best Standalone Model | XGBoost |
+| Best Explainability Model | SONFIN |
 
 ---
 
@@ -83,19 +75,16 @@ The implementation compares predictive performance, interpretability, fuzzy reas
 The project includes a Self-Constructing Neuro-Fuzzy Inference System (SONFIN) that:
 
 - Starts without predefined fuzzy rules
-- Dynamically generates rules during training
-- Learns Gaussian membership functions
-- Performs adaptive structure learning
-- Combines fuzzy reasoning with neural optimisation
+- Dynamically constructs fuzzy rules during training
+- Learns Gaussian membership functions adaptively
+- Combines fuzzy inference with neural optimisation
+- Performs both structure learning and parameter learning
 
-This enables both:
-
-- Predictive modelling
-- Explainable computational intelligence reasoning
+This enables improved interpretability and adaptive computational intelligence reasoning.
 
 ---
 
-# 📁 Project Structure
+# 📁 Repository Structure
 
 ```text
 abalone-age-classification-sonfin/
@@ -110,13 +99,10 @@ abalone-age-classification-sonfin/
 │   ├── cat_model.pkl
 │   ├── meta_model.pkl
 │   ├── advanced_fnn.pth
-│   └── sonfin_model.pth
+│   └── scaler.pkl
 │
-├── notebook/
-│   └── Part2_Final.ipynb
-│
-└── data/
-    └── sample_input.csv
+└── notebook/
+    └── ProjectK.ipynb
 ```
 
 ---
@@ -130,7 +116,7 @@ git clone https://github.com/YOUR_USERNAME/abalone-age-classification-sonfin.git
 cd abalone-age-classification-sonfin
 ```
 
-Install dependencies:
+Install required libraries:
 
 ```bash
 pip install -r requirements.txt
@@ -146,26 +132,29 @@ streamlit run app.py
 
 ---
 
-# 🖥️ Streamlit Demonstration
+# 🖥️ Streamlit Features
 
-The Streamlit application allows users to:
+The Streamlit application supports:
 
-- Enter Abalone measurements
-- Predict age class in real time
-- Visualise model predictions
-- Demonstrate fuzzy reasoning behaviour
-
-Predicted Classes:
-
-| Class | Meaning |
-|---|---|
-| 0 | Young Abalone |
-| 1 | Medium Age Abalone |
-| 2 | Old Abalone |
+- Manual user input prediction
+- CSV batch prediction upload
+- Real-time Abalone age classification
+- Prediction confidence visualisation
+- Interactive demonstration of ensemble learning
 
 ---
 
-# 📈 Visualisations Included
+# 🐚 Prediction Classes
+
+| Class | Meaning |
+|---|---|
+| 0 | Young Abalone (Age ≤ 8) |
+| 1 | Medium Age Abalone (Age 9–10) |
+| 2 | Old Abalone (Age ≥ 11) |
+
+---
+
+# 📈 Included Visualisations
 
 - Learning curves
 - Confusion matrices
@@ -200,16 +189,17 @@ This project demonstrates:
 - Computational Intelligence (CI)
 - Fuzzy Neural Networks
 - Neuro-Fuzzy Systems
+- Self-Constructing Fuzzy Neural Networks
 - Ensemble Learning
 - Explainable AI
-- Adaptive Fuzzy Rule Learning
-- Real-world ML Deployment
+- Adaptive Rule Learning
+- Real-world ML deployment
 
 ---
 
 # 📌 Kaggle Performance
 
-The stacking ensemble achieved the best hidden-test generalisation performance with a Kaggle leaderboard score of:
+The stacking ensemble achieved the strongest hidden-test generalisation performance with a Kaggle leaderboard score of:
 
 ```text
 0.808
